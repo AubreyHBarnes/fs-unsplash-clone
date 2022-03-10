@@ -1,16 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Lora";
+  src: url('/public/fonts/Lora/Lora-VariableFont_wght.ttf');
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "PT Sans";
+  src: url('/public/fonts/PT_Sans/PTSans-Regular.ttf');
 }
 
-* {
-  box-sizing: border-box;
+@layer utilities {
+  @variants responsive {
+      .masonry {
+          column-gap: 1.5em;
+          column-count: 1;
+      }
+      .masonry-sm {
+          column-gap: 1.5em;
+          column-count: 2;
+      }
+      .masonry-md {
+          column-gap: 1.5em;
+          column-count: 3;
+      }
+      .break-inside {
+          break-inside: avoid;
+      }
+
+  }
 }
