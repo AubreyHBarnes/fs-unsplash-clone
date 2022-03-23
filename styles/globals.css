@@ -6,29 +6,8 @@
   font-family: "Lora";
   src: url('/public/fonts/Lora/Lora-VariableFont_wght.ttf');
 }
-
+/* 
 @font-face {
   font-family: "PT Sans";
   src: url('/public/fonts/PT_Sans/PTSans-Regular.ttf');
-}
-
-@layer utilities {
-  @variants responsive {
-      .masonry {
-          column-gap: 1.5em;
-          column-count: 1;
-      }
-      .masonry-sm {
-          column-gap: 1.5em;
-          column-count: 2;
-      }
-      .masonry-md {
-          column-gap: 1.5em;
-          column-count: 3;
-      }
-      .break-inside {
-          break-inside: avoid;
-      }
-
-  }
-}
+} */
