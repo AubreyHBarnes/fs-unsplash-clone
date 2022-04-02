@@ -11,3 +11,7 @@
   font-family: "PT Sans";
   src: url('/public/fonts/PT_Sans/PTSans-Regular.ttf');
 } */
+
+.url-flex-container {
+  background-color: white;
+}
