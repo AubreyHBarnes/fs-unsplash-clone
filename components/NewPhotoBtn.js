@@ -21,7 +21,7 @@ export default function NewPhotoBtn({ setGallery }) {
             .list('public', {
                 limit: 100,
                 offset: 0,
-                sortBy: { column: 'created_at', order: 'asc' },
+                sortBy: { column: 'created_at', order: 'desc' },
             });
 
         const getImgNames = data;
@@ -61,6 +61,7 @@ export default function NewPhotoBtn({ setGallery }) {
             { tags: event.target[0].value, img_name: event.target[1].value }
         ])
         .single()
+        setIsOpen(false)
         // console.log(data)
         //Then we update the gallery with new user input
         updateMasonry();
